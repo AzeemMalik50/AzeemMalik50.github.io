@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azeem Malik — Backend Developer & Architect</title>
+  <meta name="description" content="Azeem Malik — Backend Developer & Solution Architect (Node.js, AWS, MongoDB, Microservices, Serverless). 10+ years experience building scalable, secure platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind (CDN for quick deploy). For production, consider building locally. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.75); }
+    @media (prefers-color-scheme: dark) {
+      .glass { background: rgba(20,20,22,0.6); }
+      .text-muted { color: rgb(163, 163, 163); }
+    }
+  </style>
+  <!-- SEO / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Azeem Malik",
+    "jobTitle": "Backend Developer & Solution Architect",
+    "email": "mailto:AzeemAmanatAli@gmail.com",
+    "url": "",
+    "sameAs": [
+      "https://github.com/AzeemMalik50",
+      "https://www.linkedin.com/in/azeem-malik"
+    ],
+    "knowsAbout": ["Node.js","TypeScript","AWS","MongoDB","Fastify","Microservices","Serverless","React","React Native"]
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-100">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/50 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/70 glass">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold text-xl">Azeem<span class="text-indigo-600">.</span></a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#experience" class="hover:text-indigo-600">Experience</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 text-sm bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-xl shadow">
+        Hire Me
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M13.5 4.5a.75.75 0 000 1.5h4.19l-6.22 6.22a.75.75 0 101.06 1.06l6.22-6.22V12a.75.75 0 001.5 0V4.5H13.5z"/><path d="M5.25 5.25A2.25 2.25 0 003 7.5v9A2.25 2.25 0 005.25 18.75h9a2.25 2.25 0 002.25-2.25V13.5a.75.75 0 00-1.5 0v3a.75.75 0 01-.75.75h-9a.75.75 0 01-.75-.75v-9a.75.75 0 01.75-.75h3a.75.75 0 000-1.5h-3z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Backend Developer & <span class="text-indigo-600">Solution Architect</span></h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">10+ years crafting scalable, secure, cloud-native platforms with <strong>Node.js</strong>, <strong>AWS</strong> (Lambda, SNS, CDK), <strong>MongoDB</strong>, and microservices. Passionate about performance, reliability, and clean architecture.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900">View Projects</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Contact</a>
+        </div>
+        <div class="mt-6 text-sm text-muted">Lahore, Pakistan · <a class="underline" href="mailto:AzeemAmanatAli@gmail.com">AzeemAmanatAli@gmail.com</a> · <a class="underline" href="https://github.com/AzeemMalik50" target="_blank">GitHub</a> · <a class="underline" href="https://www.linkedin.com/in/azeem-malik" target="_blank">LinkedIn</a> · +92 315 6686878</div>
+      </div>
+      <div class="md:justify-self-end">
+        <div class="rounded-3xl p-6 bg-gradient-to-br from-indigo-50 to-sky-50 dark:from-slate-800 dark:to-slate-800 border border-slate-200 dark:border-slate-700 shadow-inner">
+          <h2 class="font-semibold text-slate-800 dark:text-slate-100">Core Stack</h2>
+          <ul class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>Node.js · TypeScript</li>
+            <li>Fastify · Express · NestJS</li>
+            <li>MongoDB · DynamoDB · SQL</li>
+            <li>AWS (Lambda, SNS, S3, CDK)</li>
+            <li>Microservices · Serverless</li>
+            <li>React · React Native · Angular</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-12 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold">Skills</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h4 class="font-semibold">Backend & Architecture</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Node.js, TypeScript, Fastify, Express, NestJS, REST, WebSockets, Event-driven systems, Microservices, Serverless</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h4 class="font-semibold">Datastores</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">MongoDB, DynamoDB, PostgreSQL, MySQL, Redis, Elasticsearch</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h4 class="font-semibold">Cloud & DevOps</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">AWS (Lambda, SNS, S3, EC2, CloudWatch, CDK), Docker, CI/CD, GitHub Actions, IaC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-12 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-baseline justify-between gap-4">
+        <h3 class="text-2xl font-bold">Projects</h3>
+        <span class="text-sm text-slate-500">Selected work</span>
+      </div>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <article class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-sm transition">
+          <h4 class="text-lg font-semibold">Laari — Logistics SaaS (Backend & Architecture)</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Built from scratch: load boards, bidding, fleet management, tracking, trip-based insurance, invoicing, and scheduling. Microservices with Node.js, Fastify/NestJS, MongoDB; serverless pieces on AWS Lambda, SNS, DynamoDB; Infra via CDK.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-slate-600 dark:text-slate-300">
+            <li>Reduced AWS cost by ~80% through serverless + infra optimization.</li>
+            <li>Real-time updates via WebSockets; robust CI/CD and observability.</li>
+          </ul>
+        </article>
+        <!-- Project 2 -->
+        <article class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-sm transition">
+          <h4 class="text-lg font-semibold">Fuel Station Management (IoT Backend)</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Realtime pump & tank telemetry (PTS controllers). Domain models for stations, tanks, pumps, terminals, and transactions; measurement/status upload services; alarms and analytics.</p>
+          <ul class="mt-3 text-sm list-disc pl-5 text-slate-600 dark:text-slate-300">
+            <li>High-availability APIs with Fastify; caching + indexing for low latency.</li>
+          </ul>
+        </article>
+        <!-- Project 3 -->
+        <article class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-sm transition">
+          <h4 class="text-lg font-semibold">Insurance Integration Service</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Integrated Askari & Agico insurance: policy creation, digital certificates, wallet deductions, taxation, and reporting. Event-driven workflows with SNS and queues.</p>
+        </article>
+        <!-- Project 4 -->
+        <article class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-sm transition">
+          <h4 class="text-lg font-semibold">HaggleAI — Shopify Plugin (in progress)</h4>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Chat-driven price negotiation, auto discount-code generation, order flow integration with Shopify APIs. Node.js, MongoDB, AWS, WebSockets.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-12 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold">Experience</h3>
+      <div class="mt-6 grid gap-6">
+        <!-- ezyagent -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Senior Full Stack Software Engineer & Solution Architect — ezyagent</h4>
+            <span class="text-sm text-slate-500">Feb 2024 – Present · Remote</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>End-to-end architecture and delivery of cloud-native solutions with Node.js, AWS Lambda, MongoDB, and CDK.</li>
+            <li>Led React/React Native teams; CI/CD & DevOps ownership; mentored developers.</li>
+            <li>Delivered Laari logistics suite (fleet, load boards, bidding, tracking, insurance, invoicing, scheduling).</li>
+            <li>Optimized infrastructure, cutting AWS cost by ~80%.</li>
+          </ul>
+        </div>
+        <!-- Techvor -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Co‑Founder & CTO — Techvor</h4>
+            <span class="text-sm text-slate-500">Nov 2022 – Feb 2024 · On‑site</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>Led delivery of bespoke web/mobile apps and AI-enabled solutions; drove architecture and DevOps practices.</li>
+            <li>Client engagement, technical strategy, and team leadership across multiple SaaS products.</li>
+          </ul>
+        </div>
+        <!-- Naeemah -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Principal Software Engineer — Naeemah</h4>
+            <span class="text-sm text-slate-500">Aug 2021 – Nov 2022 · Remote</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>Full‑stack development in Nx monorepo with React.js, Node.js, TypeScript.</li>
+            <li>Serverless with AWS Lambda, CDK, DynamoDB; implemented Elasticsearch‑backed search.</li>
+          </ul>
+        </div>
+        <!-- Zentap -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Full Stack Engineer — Zentap</h4>
+            <span class="text-sm text-slate-500">May 2019 – Jul 2021 · Remote</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>Angular apps and React Native mobile builds; close collaboration with UX for responsive experiences.</li>
+          </ul>
+        </div>
+        <!-- TkXel -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Software Engineer — TkXel</h4>
+            <span class="text-sm text-slate-500">Jan 2018 – May 2019 · Lahore</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>RESTful Node.js APIs; front‑ends in Vue.js & React Native; event‑driven microservices.</li>
+          </ul>
+        </div>
+        <!-- Nextbridge -->
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-between">
+            <h4 class="font-semibold">Software Engineer → Associate — Nextbridge Pvt. Ltd</h4>
+            <span class="text-sm text-slate-500">Dec 2015 – Dec 2017 · Lahore</span>
+          </div>
+          <ul class="mt-3 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+            <li>MEAN stack apps (Angular, Node.js, Express, MongoDB); deployments to AWS/Heroku; D3.js real‑time dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section class="py-12 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">Education</h3>
+        <p class="mt-3 text-sm">BS — Information Technology, University of the Punjab, Lahore (2014)</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold">Certifications</h3>
+        <ul class="mt-3 list-disc pl-5 text-sm">
+          <li>AWS Certified Developer — Associate (In Progress)</li>
+          <li>MongoDB for Node.js Developers — MongoDB University</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="p-6 md:p-10 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 glass">
+        <h3 class="text-2xl font-bold">Let’s work together</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Open to Backend / Platform roles — Node.js, AWS, MongoDB, microservices, serverless.</p>
+        <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+          <div>
+            <div class="font-semibold">Email</div>
+            <a class="underline" href="mailto:AzeemAmanatAli@gmail.com">AzeemAmanatAli@gmail.com</a>
+          </div>
+          <div>
+            <div class="font-semibold">Phone</div>
+            <a class="underline" href="tel:+923156686878">+92 315 6686878</a>
+          </div>
+          <div>
+            <div class="font-semibold">GitHub</div>
+            <a class="underline" target="_blank" href="https://github.com/AzeemMalik50">github.com/AzeemMalik50</a>
+          </div>
+          <div>
+            <div class="font-semibold">LinkedIn</div>
+            <a class="underline" target="_blank" href="https://www.linkedin.com/in/azeem-malik">linkedin.com/in/azeem-malik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
+      © <span id="year"></span> Azeem Malik — Built with HTML & Tailwind CSS
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
